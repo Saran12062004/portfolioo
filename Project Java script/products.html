@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Page</title>
+    <link rel="stylesheet" href="products.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+</head>
+</head>
+<body>
+    <header class="header_color">
+        <div class="title">
+           <a href="Home.html">Ecommerce</a>
+        </div>
+            <div class="container">
+                <nav>
+                    <ul>
+                        <li><a href="Home.html">Home </a></li>
+                        <li><a href="products.html" id="product_nav">product</a></li>
+                        <li><a href="About.html">About</a></li>
+                        <li><a href="contact us.html">Contact</a></li>
+                    <div class="nav_button">
+                    <a href="login.html"><button  id="nav_btn"><i class="fa-solid fa-right-to-bracket"></i>     login</button></a>
+                    <a href="Register.html"><button id="nav_btn"><i class="fa-solid fa-user-plus"></i>   Register</button></a>
+                    <a href="cart.html"><button id="nav_btn4"><i class="fa-solid fa-cart-shopping" aria-hidden="true"> </i>cart(0)</button></a>
+                </div>
+                    </ul>
+                </nav>
+            </div>
+    </header>
+    <section></section>
+        <div class="latest_heading">Latest Products</div>
+        <hr>
+    </section>
+
+    <section>
+        <div class="buttons2">
+            <button onclick="filterProducts('all')"  id="heading_btn">All</button>
+            <button onclick="filterProducts('men\'s clothing')" id="heading_btn">Men's Clothing</button>
+            <button onclick="filterProducts('women\'s clothing') " id="heading_btn">Women's Clothing</button>
+            <button onclick="filterProducts('jewelery')" id="heading_btn">jewelery</button>
+            <button onclick="filterProducts('electronics')"  id="heading_btn">Electronics</button>
+        </div>
+    </section>
+
+    <section class="main-card">
+        <div class="shop_cart" id="product-container">
+           
+        </div>
+    </section><br><br><br>
+
+<section class="footer">
+    <p>Made with ❤️ by <a href="">SaRa</a>
+    </p>
+</section>
+
+<script src="product.js">
+
+</script>
+
+
+</body>
+</html>

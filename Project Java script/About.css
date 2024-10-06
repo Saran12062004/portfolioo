@@ -1,0 +1,120 @@
+.title{
+    font-size: 30px;
+    font-weight: bolder;
+    margin-left: 70px;
+}
+.title a{
+    color: black;
+    text-decoration: none;
+}
+header{
+    display: flex;
+    column-gap: 150px;
+    align-items: center;
+    font-family:Arial ;
+}
+.header_color{
+    background-color: rgb(253, 249, 249);
+}
+.nav_button{
+    column-gap: 20px;
+    margin-left:200px;
+}
+.container{
+    margin-top: 10px;
+}
+#home_nav{
+    color: black;
+}
+#about_nav{
+    color: black;
+}
+button{
+    font-size: 16px;
+    border: 1px solid rgb(21, 20, 20);
+    padding: 8px;
+    background-color: transparent;
+    border-radius: 5px;
+}
+button:hover{
+    color: white;
+    background-color: black;
+}
+#nav_btn{
+    margin-left: 25px;
+}
+#nav_btn:hover{
+    border: 3px solid rgb(87, 83, 83);
+}
+nav ul{
+    display: flex;
+    column-gap:20px;
+    list-style: none;
+    margin-top: 30px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: rgb(210, 208, 208);
+    font-size: 20px;
+}
+
+a:hover{
+    color: black;
+}
+p{
+    color: rgb(173, 164, 164);
+    font-size: 18px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.heading_about{
+    font-size: 30px;
+    font-family: sans-serif;
+    margin-top: 4%;
+    margin-left: 45%;
+}
+.category b{
+    color:hwb(160 1% 63% / 0.952) ;
+    font-weight: bold;
+}
+.category h2{
+    font-weight: bold;
+    margin-left: 40px;
+
+}
+
+.category_cart a{
+    text-decoration: none;
+}
+div.category_cart{
+    display: flex;
+    
+}
+.category_cart img{  
+    width: 100%;
+    
+}
+.category_cart figure{
+    border: 1px solid gray;
+    padding: px;
+    border-radius: 5px;
+    
+}
+.category_cart  figcaption{
+    text-align: center;
+    padding: 30px;
+    color: black;
+    
+
+}
+.category_cart a figcaption{
+    text-decoration: none;
+}
+.footer{
+    margin-top: 4%;
+    margin-left: 45%;
+    margin-bottom: 4%;
+}
+#heart_color{
+    color: red;
+}

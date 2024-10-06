@@ -1,0 +1,690 @@
+
+/* header starts css */
+.first_nav{
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(148, 227, 148);
+    border: 0.5px solid rgb(18, 139, 18);
+    padding: 11px;
+    top: 10px;
+    font-family: sans-serif;
+    font-size: 15px;
+}
+.first_nav a{
+    text-decoration: none;
+    color: black;
+    font-family: sans-serif;
+    font-size: medium;
+}
+.first_nav a:hover{
+    color:white;
+}
+header{
+    border: 0.5px solid white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family:Arial ;
+}
+nav ul{
+    display: flex;
+    column-gap:30px ;
+    list-style: none;
+}
+nav ul li a{
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+}
+a:hover{
+    color: rgba(6, 194, 115, 0.891);   
+}
+#dear{
+    color: rgb(86, 199, 86);
+}
+.head_icon{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+input.search{
+    background-image: url("assets/search.png");
+    padding: 10px;
+    width: 300px;
+    font-size: 15px;
+    font-weight: 250;
+    border-radius: 5px;
+    border: 1px solid grey;
+    background-position: 280px center;
+    background-repeat: no-repeat;
+}
+div.head_icon form a{
+    color: black;
+    font-size: 20px;
+}
+.home{
+    display: flex;
+    justify-content: space-around;
+    border: 1px solid white;
+}
+.home_content{
+    position: relative;
+    top: 70px;
+    bottom: 100px;
+    left: 30px;
+}
+.home_content h5{
+font-size: 25px;
+}
+.home_content h1{
+    font-size:40px ;
+}
+.home_content b{
+    color: hwb(160 4% 33% / 0.952);
+
+}
+.home_content p{
+    color: gray;
+    font-size: 20px;
+}
+.home_content a{
+    background-color: hwb(160 7% 36% / 0.952);
+    color: antiquewhite;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 3px;
+    border: none;
+}
+.home_content a:hover{
+    border: 1px solid  hwb(160 1% 63% / 0.952);
+    color:  hwb(160 1% 63% / 0.952);
+    background-color: aliceblue;
+}
+ .home_profile{
+   margin-left: 100px; 
+   margin-top: 80px;
+}
+.category b{
+    color:hwb(160 1% 63% / 0.952) ;
+    font-weight: bold;
+}
+.category h2{
+    font-weight: bold;
+    margin-left: 40px;
+
+}
+
+.category_cart a{
+    text-decoration: none;
+}
+div.category_cart{
+    display: flex;
+    
+}
+.category_cart img
+{   border-radius: 10px;
+    width: 100%;
+    
+}
+.category_cart figure{
+    border: 1px solid gray;
+    padding: 15px;
+    border-radius: 5px;
+    
+}
+.category_cart  figcaption{
+    text-align: center;
+    padding: 8px;
+    color: black;
+    
+
+}
+.category_cart a figcaption{
+    text-decoration: none;
+}
+.shop_btn a button{
+    position: relative;
+    top: 0px;
+    left: 40px;
+    color: black;
+    background-color: whitesmoke;
+    padding: 10px;
+    border:none;
+    margin-right: 10px;
+    border: 4px;
+}
+.shop_btn a button:hover{
+    background-color: rgb(251, 227, 198);
+    color:  hwb(160 1% 63% / 0.952);
+
+}
+.shop_cart{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+
+}
+.shop_cart figure{
+    border: 1px solid  hwb(160 1% 63% / 0.952);
+    padding: 10px;
+    border-radius: 10px;
+    height: 401px;
+}
+.shop_cart figure img{
+    width: 100%;
+    border-radius: 15px;
+}
+.cart_product{
+    position: relative;
+    top: 15px;
+    left: 15px;
+}
+figure .img2{
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition:  0.4s ease-out; 
+}
+figure:hover .img2{
+    opacity: 1;
+    z-index: 0;
+    width: 90%;
+    padding: 10px;
+}
+.center{
+    position: absolute;
+    top: 120px;
+    left: 80px;
+    word-spacing: 10px;
+    opacity: 0;
+    transition:  0.4s ease-out;
+}
+figure:hover .center{
+    opacity: 1;
+}
+.center a{
+    color:black;
+    border-radius: 50%;
+    padding: 12px;
+    background-color:rgb(209, 247, 227);
+    
+}
+.center a:hover{
+    color:white;
+    background-color: rgb(2, 87, 42);
+}
+.Main-tool .Tool{
+    position: relative;
+    display: inline-block;
+ }
+.Main-tool .Tool{
+     visibility: hidden;
+     width: 90px;
+     background-color:#03633b;
+     color: white;
+     text-align: center;
+     border: 5px;
+     padding: 7px 0;
+     position: absolute;
+     z-index: 1;
+     bottom: 40px;
+     left: -25px;
+     transition: opacity 0.5s;
+     border-radius: 5px;
+ }
+ .Main-tool .Tool::after{
+     content: "";
+     position: absolute;
+     top: 100%;
+     left: 40%;
+     border-width: 5px;
+     border-style: solid;
+     border-color: #03633b transparent transparent transparent;
+ }
+ .Main-tool:hover .Tool{
+     visibility: visible;
+     opacity: 1;
+ }
+ .Main-tool .Tool-1{
+    position: relative;
+    display: inline-block;
+ }
+.Main-tool .Tool-1{
+     visibility: hidden;
+     width: 139px;
+     background-color:#03633b;
+     color: white;
+     text-align: center;
+     border: 5px;
+     padding: 7px 0;
+     position: absolute;
+     z-index: 1;
+     bottom: 40px;
+     left: 30px;
+     transition: opacity 0.5s;
+     border-radius: 5px;
+ }
+ .Main-tool .Tool-1::after{
+     content: "";
+     position: absolute;
+     top: 100%;
+     left: 40%;
+     border-width: 5px;
+     border-style: solid;
+     border-color: #03633b transparent transparent transparent;
+ }
+ .Main-tool:hover .Tool-1{
+     visibility: visible;
+     opacity: 1;
+ }
+ .Main-tool .Tool-2{
+    position: relative;
+    display: inline-block;
+ }
+.Main-tool .Tool-2{
+     visibility: hidden;
+     width: 100px;
+     background-color:#03633b;
+     color: white;
+     text-align: center;
+     border: 5px;
+     padding: 7px 0;
+     position: absolute;
+     z-index: 1;
+     bottom: 40px;
+     left: 90px;
+     transition: opacity 0.5s;
+     border-radius: 5px;
+ }
+ .Main-tool .Tool-2::after{
+     content: "";
+     position: absolute;
+     top: 100%;
+     left: 40%;
+     border-width: 5px;
+     border-style: solid;
+     border-color: #03633b transparent transparent transparent;
+ }
+ .Main-tool:hover .Tool-2{
+     visibility: visible;
+     opacity: 1;
+ }
+.top_left1{
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  background-color: rgb(241, 156, 184);
+  border-radius: 5px;
+  padding: 4px;
+}
+.top_left2{
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    background-color: rgb(133, 221, 168);
+    border-radius: 5px;
+    padding: 4px;
+}
+.top_left3{
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    background-color:  hwb(35 38% 0% / 0.952);
+    border-radius: 5px;
+    padding: 4px;
+}
+.top_left4{
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    background-color:rgb(173, 227, 246);
+    border-radius: 5px;
+    padding: 5px;
+}
+.cart_product figcaption{
+    color: gray;
+}
+.cart_product s{
+    color: gray;
+}
+.cart_product p{
+    color: rgb(7, 138, 48);
+}
+#bag{
+position: absolute;
+bottom: 55px;
+left: 250px;
+color: hwb(0 0% 100% / 0.952);
+background-color: rgb(188, 255, 194);
+padding:8px;
+border-radius:15px ;
+}
+#bag:hover{
+    background-color:rgb(2, 87, 42);
+}
+#bag{
+   position: relative;
+   display: inline-block;
+}
+#bag .tooltip{
+    visibility: hidden;
+    width: 80px;
+    background-color:#03633b;
+    color: white;
+    text-align: center;
+    border: 5px;
+    padding: 7px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 42px;
+    left: -25px;
+    opacity: 0;
+    transition: opacity 0.5s;
+    border-radius: 7px;
+}
+#bag .tooltip::after{
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 40%;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+}
+#bag:hover .tooltip{
+    visibility: visible;
+    opacity: 1;
+}
+main{
+    display: flex;
+    width: 100%;
+    column-gap: 30px;
+    margin-top: 50px;
+}
+.banner1{
+    background-image: url('assets/deals-1.jpg');
+    width:100%;
+    height:511px;
+    margin-left: 40px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    padding-left: 20px;
+}
+ .banner2{
+    background-image: url('assets/deals-2.png');
+    width: 100%;
+    height: 511px;
+    margin-right: 20px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    padding-left: 20px;   
+}
+main .green{
+    color: hwb(160 1% 63% / 0.952);
+    font-weight: bold;
+    font-size: 33px;
+}
+main .gray{
+    color: gray;
+    font-size: 20px;
+}
+main .red{
+    color: red;
+    font-size: 20px;
+}
+main .gree{
+    background-color: hwb(160 1% 63% / 0.952);
+    padding: 10px;
+    color: white;
+    border: 1px solid  hwb(160 1% 63% / 0.952) ;
+    margin-left: 10px;  
+}
+.bold b{
+    font-size: 30px;
+    margin-left: 10px; 
+}
+.space{
+    word-spacing:32px;
+    padding-right: 30px;
+    color: gray;
+}
+.banner1 div{
+    margin-left: 13px;
+}
+.banner2 div{
+    margin-left: 13px;
+}
+.black{
+    font-size: 25px;
+}
+.bord{
+    padding: 10px;
+    color: hwb(160 1% 63% / 0.952);
+    border: 1px solid  hwb(160 1% 63% / 0.952);
+    border-radius: 4px;
+    margin-top: 38px;
+}
+.bord:hover{
+    background-color: hwb(160 1% 63% / 0.952) ;
+    color: white;
+}.new_arrival{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+
+}
+.new_arrival figure{
+    border: 1px solid  hwb(160 1% 63% / 0.952);
+    padding: 10px;
+    border-radius: 10px;
+    height: 401px;
+}
+.new_arrival figure img{
+    width: 100%;
+    border-radius: 15px;
+}
+.new h2{
+    margin-left: 50px;
+    font-size: 25px;
+}
+.ggg{
+    color: hwb(160 1% 63% / 0.952) ;
+    font-weight: 20px;
+}
+.slomo{
+    border: none;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    row-gap: 40px;
+    width: 95%;
+    margin-left: 50px;   
+}
+.slomo hr{
+    margin-right:70px;
+}
+.slomo hr::before{
+    position: absolute;
+    content:"";
+    background-color: green;
+    width: 100px;
+    height: 2px;
+}
+
+.out_product img{
+    border: none;
+    padding: 5px;
+    border-radius: 10px;
+}
+.out_product{
+    line-height: 30px;
+}
+.out_product {
+    display: flex;
+   
+}
+.out_product div img{
+    width: 100px;
+    height: 100px;
+}
+.ppp{
+    color: hwb(160 1% 63% / 0.952) ;
+    font-weight: bold;
+}
+.sss{
+    color: gray;
+}
+.out_product  div h3{
+    font-size: 15px;
+    line-height: 20px;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+#bore{
+    background-color: hwb(148 19% 41%);
+    display: flex;
+    justify-content: space-around;
+    align-content: center;   
+}
+.border_cont{
+    display: flex;
+    align-items: center;
+    padding:10px ;
+}
+.border_form{
+    margin-top: 15px;
+       
+}
+.border_form input{
+    padding: 10px;
+    width: 250px;
+    margin-left: 20px;
+}
+.sub_btn{
+    position: relative;
+    right: 10px;
+    padding: 10px;
+    background-color: black;
+    color: white;
+}
+footer{
+    display: flex;
+    justify-content: space-around;
+}
+.footer_address ul li{
+    line-height: 35px;
+    list-style: none;
+    font-size: 18px;   
+}
+.footer_address ul li a{
+    text-decoration: none;
+    color: black;
+}
+.footer_address ul li a:hover{
+    color: rgb(18, 147, 85);
+    transform: scaleX(10px);
+}
+.footer_address ul li:hover{
+    transform: translateX(2px);
+    transition: 0.1s linear;
+}
+.footer_account ul li{
+    line-height: 35px;
+    list-style: none;
+    font-size: 18px;
+}
+.footer_account ul li a{
+    text-decoration: none;
+    color: black;
+}
+.footer_account ul li a:hover{
+    color: rgb(18, 147, 85);
+    transform: scaleX(10px);
+}
+.footer_account ul li:hover{
+    transform: translateX(2px);
+    transition:0.1s linear;
+}
+.footer_content{
+    font-size: 18;
+}
+.shop_shop{
+    border: 1px solid grey;
+    background-color: whitesmoke;
+    padding: 20px;
+}
+.shop_shop a{
+    color: black;
+    text-decoration: none;
+}
+.honey{
+    color: hwb(160 1% 63% / 0.952) ;
+}
+.header_top p{
+    margin-left: 50px;
+    color: gray;
+    font-size: 20px;
+}
+.login{
+    display: flex;
+    justify-content: space-evenly;
+}
+.login_form {
+    border: 1px solid gray;
+    width: 550px;
+    position:relative;
+    top: 50PX;
+    left: 50px;
+    border-radius: 10px;
+    height: 280px;
+} 
+.form_name input {
+    border: 1px solid gray;
+    padding: 10px;
+    margin: 10px;
+    width: 500px;
+    border-radius: 10px;
+}
+.form_name a button{
+    padding: 10px;
+    margin: 10px;
+    background-color:  hwb(160 1% 63% / 0.952);
+    color: white;
+    width: 80px;
+    border: none;
+    border-radius: 10px;
+}
+.account_form{
+    border: 1px solid gray;
+    width: 550px;
+    position:relative;
+    top: 50PX;
+    left: 50px;
+    border-radius: 10px;
+    margin-right: 100px;
+}
+.account_form input{
+    border: 1px solid gray;
+    padding: 10px;
+    margin: 10px;
+    width: 500px;
+    border-radius: 10px;
+}
+.account_form a button{
+    padding: 10px;
+    margin: 10px;
+    background-color:  hwb(160 1% 63% / 0.952);
+    color: white;
+    width: 200px;
+    border: none;
+    border-radius: 10px;
+}
+.last{
+    display: flex;
+    justify-content: space-between;
+    color: rgb(167, 167, 167);
+    font-family: sans-serif;
+    font-size: small;
+    text-align: center;
+    margin-top: 10px;
+    padding: 10px 0px;
+}

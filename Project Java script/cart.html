@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart</title>
+    <link rel="stylesheet" href="cart.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+</head>
+<body>
+    <header class="header_color">
+        <div class="title">
+           <a href="Home.html">Ecommerce</a>
+        </div>
+            <div class="container">
+                <nav>
+                    <ul>
+                        <li><a href="Home.html">Home </a></li>
+                        <li><a href="products.html">product</a></li>
+                        <li><a href="About.html">About</a></li>
+                        <li><a href="contact us.html">Contact</a></li>
+                    <div class="nav_button">
+                    <a href="login.html"> <button  id="nav_btn"><i class="fa-solid fa-right-to-bracket"></i>     Login</button></a>
+                   <a href="Register.html"> <button id="nav_btn"><i class="fa-solid fa-user-plus"></i>   Register</button></a>
+                   <a href="cart.html"><button id="nav_btn4"><i class="fa-solid fa-cart-shopping" aria-hidden="true"> </i> Cart (0)</button></a>
+                </div>
+                    </ul>
+                </nav>
+            </div>
+    </header>
+<div class="mycart12">
+<div class="container1">
+    <h2 class="title">My Cart</h2>
+    <div class="cart-grid" id="cart-container">
+    </div>
+    
+</div>
+    <div class="cart-summary">
+        <h2>Order Summary</h2>
+        <div class="cart11">
+            <p>Shipping:$<span id="cart-total-price1">30</span></p>  
+        <p>Total: $<span id="cart-total-price">0.00</span></p>
+        <button onclick="checkout()" id="checkout">Go to checkout</button>
+        </div>
+    </div>
+</div>
+<section class="footer">
+    <p>Made with ❤️ by <a href="">SaRa</a>
+    </p>
+</section>
+
+<script src="cart.js">
+
+</script>
+</body>
+</html>
